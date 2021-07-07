@@ -1,0 +1,10 @@
+-var text = "En la nueva vercion de z invasion hemos agreado la capaciadad de usar algunos veiculos voladores como helicopteros y naves extraterrestes , ademas algunas nuevas armas y trampas ."
+-var titulos = ["Naves","Nuevas entregas" ,"Ultimas noticias"]
+-var enlases = ["QA", "Contacto" , "contribuye"]
+mixin caja(imagenes,titulo,parrafo)
+    .caja__imagen: img(src="../Css/images/"+ imagenes)
+    .caja__contenido 
+        h3 #{titulo}
+        p #{parrafo}
+        a.boton leer mas
+    

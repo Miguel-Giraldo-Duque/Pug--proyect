@@ -1,0 +1,16 @@
+extend plantilla.pug 
+block contenidos
+    section.intro 
+        .intro__imagen 
+            img(src="../Css/images/imagen.png", alt="", srcset="")
+        .intro__contenido   
+            h2 #{titulos[0]}
+            p #{text}                           
+            a.boton leer    
+    main.contenido 
+        div.contenido__padre__caja
+            +caja("imagen.png", titulos[1], "Armas de electromaneticas , armas laser , grandas plasma etc")
+        div.contenido__padre__caja
+            +caja("imagen.png", titulos[2], "Naves espcaciales, veiculos , nuevos trajes ")
+        div.contenido__padre__caja
+            +caja("imagen.png", titulos[2], "Armas de electromaneticas , armas laser , grandas plasma etc")
